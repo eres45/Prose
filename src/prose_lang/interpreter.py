@@ -20,7 +20,7 @@ import urllib.error
 import re
 import threading
 from typing import Any, Dict, List, Optional
-from parser import (
+from .parser import (
     NumberLiteral, StringLiteral, BoolLiteral, NoneLiteral, LiteralNode,
     Identifier, BinOp, UnaryMinus,
     Condition, CompoundCondition,

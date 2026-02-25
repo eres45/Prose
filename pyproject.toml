@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prose-lang"
+version = "1.0.0"
+authors = [
+  { name="eres45", email="eres45@example.com" },
+]
+description = "A programming language that reads like plain English. Zero syntax friction, native Python speeds."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Interpreters",
+    "Topic :: Software Development :: Compilers",
+]
+keywords = ["prose", "language", "plain english", "interpreter", "transpiler"]
+
+[project.urls]
+"Homepage" = "https://github.com/eres45/Prose"
+"Bug Tracker" = "https://github.com/eres45/Prose/issues"
+
+[project.scripts]
+prose = "prose_lang.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

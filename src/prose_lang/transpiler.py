@@ -12,7 +12,7 @@ Usage (via prose.py):
 """
 
 from typing import Any, List
-from parser import *
+from .parser import *
 
 
 class Transpiler:

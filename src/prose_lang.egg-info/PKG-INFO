@@ -1,3 +1,21 @@
+Metadata-Version: 2.4
+Name: prose-lang
+Version: 1.0.0
+Summary: A programming language that reads like plain English. Zero syntax friction, native Python speeds.
+Author-email: eres45 <eres45@example.com>
+Project-URL: Homepage, https://github.com/eres45/Prose
+Project-URL: Bug Tracker, https://github.com/eres45/Prose/issues
+Keywords: prose,language,plain english,interpreter,transpiler
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Compilers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
 <div align="center">
   <h1>📖 Prose</h1>
   <p><strong>Programming in plain English. No brackets, no semicolons, no cryptic symbols.</strong></p>
@@ -58,29 +76,16 @@ When using the Prose Transpiler (`build` mode), your code runs at native Python 
 
 ## 🚀 Getting Started
 
-The easiest way to install Prose is directly from PyPI via pip. You just need Python 3.9+ on your system:
+No `npm install`, no `pip install`. You just need Python 3.9+ on your system.
 
-```bash
-pip install prose-lang
-```
-
-Run the interactive console:
-```bash
-prose
-```
-
-Or run an example file:
-```bash
-prose my_script.prose
-```
-
-### Building from Source
-
-If you prefer to clone the repository natively:
 ```bash
 git clone https://github.com/eres45/Prose.git
 cd Prose
-python prose.py  # Interactive mode
+```
+
+Run an example:
+```bash
+python prose.py samples/01_hello.prose
 ```
 
 ---

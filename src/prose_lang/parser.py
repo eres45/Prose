@@ -20,7 +20,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import List, Optional, Any
 
-from lexer import (
+from .lexer import (
     Token, WORD, NUMBER, COMMA, PERIOD, COLON, STRING_QUOTED, INTERP_STRING, EOF,
     PLUS, MINUS, STAR, SLASH, PERCENT, LBRACE, RBRACE,
     EQ, NEQ, LT, GT, LTE, GTE,
