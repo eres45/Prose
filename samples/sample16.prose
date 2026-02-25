@@ -1,0 +1,22 @@
+Note: Sample 16 - Inheritance
+
+Define a class called Animal with properties name, sound.
+
+Define a method called speak for Animal that takes no parameters and does the following.
+    Say "{name} says {sound}!".
+End method.
+
+Define a class called Dog that extends Animal with properties breed.
+
+Define a method called fetch for Dog that takes no parameters and does the following.
+    Say "{name} the {breed} fetches the ball!".
+End method.
+
+Let rex be a new Dog with name: "Rex", sound: "Woof", breed: "Labrador".
+
+Say "--- Testing Inheritance ---".
+Call speak on rex.
+Call fetch on rex.
+
+Say "Name: {the name of rex}".
+Say "Breed: {the breed of rex}".

@@ -1,0 +1,146 @@
+Note: Sample 32 - GUI Calculator rewritten in ~35 lines using Phase A syntax
+
+Note: State variables
+Let current be "".
+Let stored be 0.
+Let op be "".
+
+Note: Create the window
+Create a window called calc with title "Plain Calculator" and size 360 by 520.
+
+Note: Display (input field at top, spanning all 4 columns)
+Add an input called display to calc at row 0 column 0 spanning 4 columns.
+Set the text of display to "0".
+
+Note: Helper functions
+Define a function called digit_press that takes d and does the following.
+    If current is "" then do the following.
+        Set the text of display to d.
+    End if.
+    If current is not "" then do the following.
+        Set the text of display to current plus d.
+    End if.
+    Let current be the text of display.
+End function.
+
+Define a function called op_press that takes o and does the following.
+    Let stored be the text of display as a number.
+    Let op be o.
+    Let current be "".
+    Set the text of display to "".
+End function.
+
+Define a function called equals_press that takes no parameters and does the following.
+    If op is "" then do the following.
+        Give back nothing.
+    End if.
+    Let right be the text of display as a number.
+    Let result be 0.
+    If op is "+" then do the following.
+        Let result be stored + right.
+    End if.
+    If op is "-" then do the following.
+        Let result be stored - right.
+    End if.
+    If op is "*" then do the following.
+        Let result be stored * right.
+    End if.
+    If op is "/" then do the following.
+        If right is 0 then do the following.
+            Set the text of display to "Error".
+            Let current be "". Let op be "".
+            Give back nothing.
+        End if.
+        Let result be stored / right.
+    End if.
+    Let current be result as text.
+    Let op be "".
+    Set the text of display to current.
+End function.
+
+Note: Row 1 — AC, %, ⌫, ÷
+Add a button "AC" to calc at row 1 column 0 that does the following.
+    Let current be "". Let stored be 0. Let op be "".
+    Set the text of display to "0".
+End button.
+
+Add a button "%" to calc at row 1 column 1 that does the following.
+    Let val be the text of display as a number.
+    Let current be val / 100 as text.
+    Set the text of display to current.
+End button.
+
+Add a button "⌫" to calc at row 1 column 2 that does the following.
+    If the length of current > 0 then do the following.
+        Let current be substring of current from 1 to the length of current - 1.
+    End if.
+    If current is "" then do the following.
+        Set the text of display to "0".
+    End if.
+    If current is not "" then do the following.
+        Set the text of display to current.
+    End if.
+End button.
+
+Add a button "÷" to calc at row 1 column 3 that does the following.
+    Call op_press with "/".
+End button.
+
+Note: Row 2 — 7 8 9 ×
+Add a button "7" to calc at row 2 column 0 that does the following.
+    Call digit_press with "7".
+End button.
+Add a button "8" to calc at row 2 column 1 that does the following.
+    Call digit_press with "8".
+End button.
+Add a button "9" to calc at row 2 column 2 that does the following.
+    Call digit_press with "9".
+End button.
+Add a button "×" to calc at row 2 column 3 that does the following.
+    Call op_press with "*".
+End button.
+
+Note: Row 3 — 4 5 6 −
+Add a button "4" to calc at row 3 column 0 that does the following.
+    Call digit_press with "4".
+End button.
+Add a button "5" to calc at row 3 column 1 that does the following.
+    Call digit_press with "5".
+End button.
+Add a button "6" to calc at row 3 column 2 that does the following.
+    Call digit_press with "6".
+End button.
+Add a button "−" to calc at row 3 column 3 that does the following.
+    Call op_press with "-".
+End button.
+
+Note: Row 4 — 1 2 3 +
+Add a button "1" to calc at row 4 column 0 that does the following.
+    Call digit_press with "1".
+End button.
+Add a button "2" to calc at row 4 column 1 that does the following.
+    Call digit_press with "2".
+End button.
+Add a button "3" to calc at row 4 column 2 that does the following.
+    Call digit_press with "3".
+End button.
+Add a button "+" to calc at row 4 column 3 that does the following.
+    Call op_press with "+".
+End button.
+
+Note: Row 5 — 0 (wide), ., =
+Add a button "0" to calc at row 5 column 0 spanning 2 columns that does the following.
+    Call digit_press with "0".
+End button.
+Add a button "." to calc at row 5 column 2 that does the following.
+    Let has_dot be current contains ".".
+    If has_dot is false then do the following.
+        Call digit_press with ".".
+    End if.
+End button.
+Add a button "=" to calc at row 5 column 3 that does the following.
+    Call equals_press.
+End button.
+
+Note: Launch the app
+Run calc.

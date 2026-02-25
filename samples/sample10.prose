@@ -1,0 +1,20 @@
+Note: Date/Time Testing
+
+Let now be the current date and time.
+Say "Current Date/Time: " plus now.
+
+Let y be the current year.
+Say "Current Year: " plus y.
+
+Let ts be the current timestamp.
+Say "Current Timestamp: " plus ts.
+
+Note: Throwing Errors Testing
+
+Try the following.
+    Say "Attempting to throw an error...".
+    Throw error "This is a custom error!".
+    Say "This should not print.".
+Handle error and save it as err.
+    Say "Caught an error: " plus err.
+End try.

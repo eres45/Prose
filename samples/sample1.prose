@@ -1,0 +1,29 @@
+Let name be Alice.
+Let age be 25.
+Let message be hello world.
+Let flag be true.
+
+Display name.
+Display age.
+Display message.
+Display flag.
+
+Let total be age plus 10.
+Let result be total times 3.
+Let diff be result minus age.
+Let half be result divided by 2.
+
+Say the total is, total.
+Say result times 3 is, result.
+Say the difference is, diff.
+Say half of result is, half.
+
+If flag equals true then do the following.
+  Say the flag is set to true.
+Otherwise do the following.
+  Say the flag is set to false.
+End if.
+
+If age is greater than 18 then do the following.
+  Say name is older than 18.
+End if.

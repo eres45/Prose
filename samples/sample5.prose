@@ -1,0 +1,68 @@
+Note: Sample 5 — Compound conditions, modulo, type guards, skip, stop, and negative numbers.
+
+Note: Compound AND condition.
+Let age be 22.
+Let hasTicket be true.
+If age >= 18 and hasTicket equals true then do the following.
+  Say you may enter.
+Otherwise do the following.
+  Say sorry you cannot enter.
+End if.
+
+Note: Compound OR condition.
+Let day be Saturday.
+If day equals Saturday or day equals Sunday then do the following.
+  Say it is the weekend.
+Otherwise do the following.
+  Say it is a weekday.
+End if.
+
+Note: Modulo — even or odd via function.
+Define a function called checkEven that takes n and does the following.
+  Let rem be n % 2.
+  If rem = 0 then do the following.
+    Give back true.
+  Otherwise do the following.
+    Give back false.
+  End if.
+End function.
+
+Let num be 1.
+While num <= 10 do the following.
+  Let isEven be the result of calling checkEven with num.
+  If isEven equals true then do the following.
+    Say num is even.
+  Otherwise do the following.
+    Say num is odd.
+  End if.
+  Let num be num + 1.
+End while.
+
+Note: Negative numbers.
+Let temperature be -5.
+If temperature < 0 then do the following.
+  Say it is below freezing.
+End if.
+
+Note: Skip — print numbers 1 to 10 that are not multiples of 3.
+Say numbers 1 to 10 skipping multiples of 3.
+Let i be 1.
+While i <= 10 do the following.
+  Let rem3 be i % 3.
+  If rem3 = 0 then do the following.
+    Let i be i + 1.
+    Skip.
+  End if.
+  Display i.
+  Let i be i + 1.
+End while.
+
+Note: Stop — find first number over 50 in a list.
+Let numbers be a list containing 12, 37, 55, 8, 91, 4.
+Say searching for first number over 50.
+For each n in numbers do the following.
+  If n > 50 then do the following.
+    Say found it, n.
+    Stop.
+  End if.
+End for.

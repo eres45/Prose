@@ -1,0 +1,10 @@
+Define a function called fact that takes n and does the following.
+    If n is less than or equal to 1 then do the following.
+        Give back 1.
+    End if.
+    Let r be the result of calling fact with n minus 1.
+    Give back n times r.
+End function.
+
+Let result be the result of calling fact with 20.
+Say result.

@@ -1,0 +1,19 @@
+Import "time".
+
+Note: Build list of 10000 numbers
+Let numbers be a list.
+For each i from 0 to 9999 do the following.
+    Add i to numbers.
+End for.
+
+Let start be the result of calling time_now.
+Note: Filter passing numbers
+Let passing be all n in numbers where n > 8000.
+Let end be the result of calling time_now.
+
+Say "Plain Filtering:".
+Let c be the length of passing.
+Say "Found " plus c plus " numbers".
+Let diff be end minus start.
+Say "Time taken (seconds):".
+Say diff.

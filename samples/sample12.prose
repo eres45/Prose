@@ -1,0 +1,9 @@
+Note: HTTP API Test
+Note: We will fetch dummy data from JSONPlaceholder
+
+Let url be "https://jsonplaceholder.typicode.com/posts/1".
+Let response be the result of fetching url url.
+Let title be the value for title in response.
+
+Say "Fetched Post Title:".
+Say title.

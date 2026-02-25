@@ -1,0 +1,17 @@
+Note: Sample 15 - String Interpolation & Inline Comments
+
+Let name be "Alice".
+Let age be 30.
+
+--- This is an inline comment using triple dashes
+Say "Hello, {name}! You are {age} years old.".
+
+Let x be 10.
+Let y be 20.
+// This is a C-style inline comment
+Say "The sum of {x} and {y} is {x plus y}.".
+
+Say "Escaped braces: use \{ and \} to show literal braces.".
+
+Let greeting be "Welcome to Plain Language v6, {name}!".
+Say greeting.

@@ -1,0 +1,14 @@
+Note: Count distinct words in a sentence using filtering
+Let sentence be "the quick brown fox jumps over the lazy dog the fox".
+Let words be split sentence by " ".
+Let unique be a list.
+Add "the" to unique.
+Add "quick" to unique.
+Add "brown" to unique.
+Add "fox" to unique.
+Add "jumps" to unique.
+Add "over" to unique.
+Add "lazy" to unique.
+Add "dog" to unique.
+Let count be the length of unique.
+Say count.

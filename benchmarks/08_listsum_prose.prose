@@ -1,0 +1,5 @@
+Let total be 0.
+For each i from 1 to 5000 do the following.
+    Let total be total plus i.
+End for.
+Say total.

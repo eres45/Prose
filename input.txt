@@ -1,0 +1,8 @@
+Let
+x
+be
+10.
+
+Say x.
+
+quit

@@ -1,0 +1,10 @@
+Note: Bubble sort simulation - count the iterations
+Let n be 200.
+Let swaps be 0.
+
+For each pass from 1 to 200 do the following.
+    For each i from 1 to n do the following.
+        Let swaps be swaps plus 1.
+    End for.
+End for.
+Say swaps.

@@ -1,0 +1,16 @@
+Note: Prime sieve - count primes up to 5000
+Let limit be 5000.
+Let count be 0.
+For each n from 2 to limit do the following.
+    Let is_prime be true.
+    For each d from 2 to n minus 1 do the following.
+        Let remainder be n modulo d.
+        If remainder is 0 then do the following.
+            Let is_prime be false.
+        End if.
+    End for.
+    If is_prime is true then do the following.
+        Let count be count plus 1.
+    End if.
+End for.
+Say count.

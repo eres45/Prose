@@ -1,0 +1,37 @@
+Note: Sample 21 - Standard Library Modules
+
+--- Math Module ---
+Import math.
+
+Let angle be the result of calling math_pi.
+Let halfPi be angle divided by 2.
+Let s be the result of calling math_sin with halfPi.
+Say "Sin of pi/2 is {s}.".
+
+
+--- String Module ---
+Import string.
+
+Let str be "hello world".
+Let starts be the result of calling string_startsWith with str, "hello".
+Let ends be the result of calling string_endsWith with str, "world".
+Say "Starts with hello: {starts}".
+Say "Ends with world: {ends}".
+
+Let sub be the result of calling string_substring with str, 0, 5.
+Say "Substring (0-5) is: {sub}.".
+
+
+--- Collections Module ---
+Import collections.
+
+Let nums be a list containing 5, 2, 8, 1, 9.
+Let sortedNums be the result of calling collections_sort with nums.
+Say "Sorted: {sortedNums}".
+
+Let reversedNums be the result of calling collections_reverse with nums.
+Say "Reversed: {reversedNums}".
+
+Let dupes be a list containing 1, 2, 2, 3, 3, 3.
+Let uniq be the result of calling collections_unique with dupes.
+Say "Unique: {uniq}".

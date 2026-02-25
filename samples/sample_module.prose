@@ -1,0 +1,8 @@
+Note: A dummy module for testing imports
+
+Let PI be 3.14159.
+Let VERSION be "1.0.0".
+
+Define a function called greet_user that takes name and does the following.
+    Say "Hello, {name}! Welcome to the module.".
+End function.

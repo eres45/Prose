@@ -1,0 +1,64 @@
+Note: Sample 31 - Complex Problem (Concurrent processing and error handling)
+
+Define a class called Report with properties task_id, status.
+
+Define an async function called process_item that takes item_id and does the following.
+    Note: Simulate some asynchronous work
+    Let delay be 30000 * item_id.
+    Let count be 0.
+    While count < delay do the following.
+        Let count be count + 1.
+    End while.
+    
+    If item_id is 3 then do the following.
+        Throw error "Connection timeout for item 3".
+    End if.
+    
+    If item_id is 5 then do the following.
+        Throw error "Access Denied on item 5".
+    End if.
+    
+    Give back a new Report with task_id: item_id, status: "Success".
+End function.
+
+Say "--- Distributed Task Processor ---".
+Say "Dispatching 5 background tasks...".
+
+Let futures be an empty list.
+
+Let x be 1.
+While x <= 5 do the following.
+    Let f be the result of calling process_item with x.
+    Add f to futures.
+    Let x be x + 1.
+End while.
+
+Say "All tasks dispatched! Main thread is free to do other work.".
+Say "Now waiting for tasks to complete...".
+
+Let parsed_reports be an empty list.
+Let exact_errors be an empty list.
+
+For each f in futures do the following.
+    Attempt to do the following.
+        Let result be waiting for f.
+        Add result to parsed_reports.
+    Rescue error as err.
+        Add err to exact_errors.
+    End attempt.
+End for.
+
+Say "".
+Say "--- Final Results ---".
+For each report in parsed_reports do the following.
+    Say "Task {the task_id of report} finished with status: {the status of report}".
+End for.
+
+Say "".
+Say "--- Captured Errors ---".
+For each e in exact_errors do the following.
+    Say "Failed: {e}".
+End for.
+
+Say "".
+Say "All execution branches resolved successfully!".

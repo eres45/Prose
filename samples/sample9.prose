@@ -1,0 +1,20 @@
+Note: Module testing
+
+Import functions from "samples/helpers.plain".
+
+Say "Calling imported function:".
+Let result be the result of calling say_hello with "Alice".
+Say result.
+
+Note: File I/O testing
+
+Let testFile be "samples/output.txt".
+
+Write "This is the first line." to file testFile.
+Append " And this is the second line." to file testFile.
+
+If file testFile exists then do the following.
+    Let contents be the contents of file testFile.
+    Say "Contents of file:".
+    Say contents.
+End if.

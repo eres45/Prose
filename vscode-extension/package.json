@@ -1,0 +1,22 @@
+{
+  "name": "Prose-language",
+  "displayName": "Prose Language",
+  "description": "Syntax highlighting for Prose — the natural English programming language",
+  "version": "1.0.0",
+  "publisher": "Prose-lang",
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [{
+      "id": "Prose",
+      "aliases": ["Prose", "Prose"],
+      "extensions": [".Prose"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "Prose",
+      "scopeName": "source.Prose",
+      "path": "./syntaxes/Prose.tmLanguage.json"
+    }]
+  }
+}

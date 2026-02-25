@@ -1,0 +1,27 @@
+Note: Sample 18 - Pattern Matching and Enums
+
+--- Pattern Matching with Check/When ---
+Let day be 3.
+
+Check day.
+    When 1, Say "Monday".
+    When 2, Say "Tuesday".
+    When 3, Say "Wednesday".
+    When 4, Say "Thursday".
+    When 5, Say "Friday".
+    Otherwise, Say "Weekend".
+End check.
+
+--- Testing enums ---
+Define an enum called Color with values Red, Green, Blue.
+
+Say "Enum defined successfully!".
+
+--- String-based pattern matching ---
+Let grade be "B".
+Check grade.
+    When "A", Say "Excellent!".
+    When "B", Say "Good job!".
+    When "C", Say "Average.".
+    Otherwise, Say "Needs improvement.".
+End check.

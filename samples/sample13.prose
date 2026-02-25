@@ -1,0 +1,31 @@
+Note: OOP Test
+
+Define a class called Person with properties name, age.
+
+Define a method called greet for Person that takes no parameters and does the following.
+    Say "Hello, my name is" plus name.
+    Say "I am" plus age plus "years old".
+End method.
+
+Define a method called celebrateBirthday for Person that takes no parameters and does the following.
+    Let age be age plus 1.
+    Say "YAY! Happy Birthday" plus name plus "! Now I am" plus age.
+End method.
+
+Say "--- Creating Alice ---".
+Let alice be a new Person with name: "Alice", age: 30.
+
+Say "--- Calling greet on Alice ---".
+Call greet on alice.
+
+Say "--- Calling celebrateBirthday on Alice ---".
+Call celebrateBirthday on alice.
+
+Say "--- Verifying property access ---".
+Say "Final age:".
+Say the age of alice.
+
+Say "--- Updating property directly ---".
+Set the age of alice to 50.
+Say "Updated age:".
+Say the age of alice.

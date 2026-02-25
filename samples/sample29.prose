@@ -1,0 +1,14 @@
+Note: Sample 29 - Module namespaces and isolated imports
+
+Say "--- Testing Specific Imports ---".
+Import { greet_user, PI } from "samples/sample_module.plain".
+
+Say "PI is: {PI}".
+Call greet_user with "Alice".
+
+Say "".
+Say "--- Testing Namespace Aliases ---".
+Import "samples/sample_module.plain" as my_mod.
+
+Say "Accessing variable from module: {the VERSION of my_mod}".
+Call greet_user on my_mod with "Bob".

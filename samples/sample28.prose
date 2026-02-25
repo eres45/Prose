@@ -1,0 +1,27 @@
+Note: Sample 28 - User Defined Error Handling (Try/Catch)
+
+Say "Starting risky operation...".
+
+Attempt to do the following.
+    Let result be 10 / 0.
+    Say "This line should never evaluate.".
+Rescue error as e.
+    Say "Caught an error nicely: {e}".
+End attempt.
+
+Say "Program continued execution normally!".
+
+Define a function called validate_age that takes age and does the following.
+    If age is less than 18 then do the following.
+        Throw error "You must be 18 or older.".
+    End if.
+    Say "Access granted!".
+End function.
+
+Attempt to do the following.
+    Call validate_age with 15.
+Rescue error as alert.
+    Say "Validation failed: {alert}".
+End attempt.
+
+Say "All isolated tests passed.".

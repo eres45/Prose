@@ -1,0 +1,10 @@
+Note: JSON Serialization and Parsing Test
+
+Let user be a dictionary containing name: "Bob", age: 40.
+Let payload be the JSON for user.
+Say "Serialized JSON:".
+Say payload.
+
+Let reconstructed be the JSON parsed from text payload.
+Let bob_name be the value for name in reconstructed.
+Say "Parsed Name: " plus bob_name.

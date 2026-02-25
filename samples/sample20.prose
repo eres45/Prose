@@ -1,0 +1,27 @@
+Note: Sample 20 - Regex, Default Params, and Env Vars
+
+Say "--- Regex Matching ---".
+
+Let text be "Hello World 2024".
+Let yearMatch be the result of matching pattern "[0-9]+" in text.
+Say "Year found: {yearMatch}".
+
+Let wordMatch be the result of matching pattern "[A-Z][a-z]+" in text.
+Say "First word found: {wordMatch}".
+
+Let noMatch be the result of matching pattern "xyz" in text.
+Say "No match result: {noMatch}".
+
+Say "--- Environment Variables ---".
+Let pathVar be the environment variable "PATH".
+If pathVar is not equal to nothing then do the following.
+    Say "PATH environment variable is set.".
+End if.
+
+Say "--- CLI Arguments ---".
+Let args be the command line arguments.
+Say "CLI arguments: {args}".
+
+Say "--- String Interpolation with Expressions ---".
+Let x be 42.
+Say "The answer is {x}. Double it: {x times 2}.".

@@ -1,0 +1,28 @@
+Note: Dictionary Test
+
+Let person be a dictionary containing name: "Alice", age: 30.
+Say person.
+
+Let emptyDict be an empty dictionary.
+Say emptyDict.
+
+Let n be the value for name in person.
+Say n.
+
+Set the value for age in person to 31.
+Set the value for "city" in person to "Wonderland".
+Say person.
+
+Remove the value for age in person.
+Say person.
+
+If person has the key name then do the following.
+    Say "Person has a name!".
+End if.
+
+If person has the key "city" then do the following.
+    Say "Person lives in Wonderland!".
+End if.
+
+Let k be the keys of person.
+Say k.

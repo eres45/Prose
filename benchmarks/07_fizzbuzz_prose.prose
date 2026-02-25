@@ -1,0 +1,19 @@
+Let fizz_count be 0.
+Let buzz_count be 0.
+Let fizzbuzz_count be 0.
+For each i from 1 to 1000 do the following.
+    Let rem3 be i modulo 3.
+    Let rem5 be i modulo 5.
+    If rem3 is 0 and rem5 is 0 then do the following.
+        Let fizzbuzz_count be fizzbuzz_count plus 1.
+    End if.
+    If rem3 is 0 and rem5 is not 0 then do the following.
+        Let fizz_count be fizz_count plus 1.
+    End if.
+    If rem5 is 0 and rem3 is not 0 then do the following.
+        Let buzz_count be buzz_count plus 1.
+    End if.
+End for.
+Say fizzbuzz_count.
+Say fizz_count.
+Say buzz_count.

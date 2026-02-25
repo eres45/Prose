@@ -1,0 +1,64 @@
+Note: Sample 4 — Lists, for-each loops, and string operations.
+
+Note: Create a list of names.
+Let names be a list containing Alice, Bob, Charlie, Diana, Eve.
+Let nameCount be the length of names.
+Say the list has, nameCount, people.
+
+Note: Loop through names with for-each.
+Say greetings from everyone.
+For each person in names do the following.
+  Say hello, person.
+End for.
+
+Note: Add to the list.
+Add Frank to names.
+Let newCount be the length of names.
+Say after adding Frank there are now, newCount, people.
+
+Note: Remove from the list.
+Remove item 2 from names.
+Let finalCount be the length of names.
+Say after removing item 2 there are now, finalCount, people.
+
+Note: Access a specific item by index.
+Let first be item 1 of names.
+Say the first name is, first.
+Let last be item finalCount of names.
+Say the last name is, last.
+
+Note: Build a list using a loop.
+Let squares be a list.
+Let x be 1.
+While x <= 5 do the following.
+  Let sq be x * x.
+  Add sq to squares.
+  Let x be x + 1.
+End while.
+Say squares from 1 to 5.
+For each s in squares do the following.
+  Display s.
+End for.
+
+Note: String operations.
+Let word be hello world.
+Let up be uppercase of word.
+Let down be lowercase of up.
+Let wordLen be the length of word.
+Say in upper case it is, up.
+Say in lower case it is, down.
+Say the word has, wordLen, characters.
+
+Note: Type checking.
+Let myNum be 42.
+Let myText be hello.
+Let myList be a list containing 1, 2, 3.
+If myNum is a number then do the following.
+  Say myNum is confirmed to be a number.
+End if.
+If myText is text then do the following.
+  Say myText is confirmed to be text.
+End if.
+If myList is a list then do the following.
+  Say confirmed it is a list.
+End if.

@@ -1,0 +1,17 @@
+Note: Sample 27 - Stacktraces
+
+Define a function called crash_here that takes no parameters and does the following.
+    Let oops be 1 / 0.
+End function.
+
+Define a function called level_one that takes no parameters and does the following.
+    Call crash_here.
+End function.
+
+Define a class called TestClass with properties empty.
+Define a method called level_two for TestClass that takes no parameters and does the following.
+    Call level_one.
+End method.
+
+Let obj be a new TestClass.
+Call level_two on obj.

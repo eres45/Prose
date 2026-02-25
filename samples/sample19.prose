@@ -1,0 +1,31 @@
+Note: Sample 19 - Unit Testing Framework
+
+Define a function called add that takes a and b and does the following.
+    Give back a plus b.
+End function.
+
+Define a function called multiply that takes a and b and does the following.
+    Give back a times b.
+End function.
+
+Test "addition returns correct sum".
+    Let result be the result of calling add with 2, 3.
+    Assert result equals 5.
+End test.
+
+Test "multiplication returns correct product".
+    Let result be the result of calling multiply with 4, 5.
+    Assert result equals 20.
+End test.
+
+Test "addition with zero".
+    Let result be the result of calling add with 0, 7.
+    Assert result equals 7.
+End test.
+
+Test "zero multiplication".
+    Let result be the result of calling multiply with 0, 100.
+    Assert result equals 0.
+End test.
+
+Run all tests.

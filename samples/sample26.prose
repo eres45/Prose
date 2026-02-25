@@ -1,0 +1,20 @@
+Note: Sample 26 - Default Parameters
+
+Define a function called greet that takes name defaulting to "Guest" and does the following.
+    Say "Hello, {name}!".
+End function.
+
+Call greet with "Alice".
+Call greet with no parameters.
+
+Define a class called User with properties age.
+Define a method called birthday for User that takes years defaulting to 1 and does the following.
+    Set the age of self to the age of self plus years.
+    Say "Happy birthday! You are now {the age of self}.".
+End method.
+
+Let u be a new User.
+Set the age of u to 20.
+
+Call birthday on u with no parameters.
+Call birthday on u with 5.

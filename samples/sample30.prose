@@ -1,0 +1,25 @@
+
+
+Define an async function called background_task that takes wait_time and does the following.
+    Say "Task started. Working for {wait_time} cycles...".
+    
+    Note: Simulate a slow blocking operation
+    Let count be 0.
+    While count < wait_time do the following.
+        Let count be count + 1.
+    End while.
+    
+    Say "Task finished!".
+    Give back wait_time * 100.
+End function.
+
+Say "Starting the main thread...".
+
+Let my_task be the result of calling background_task with 50000.
+
+Say "Main thread is free to do other things while task is running!".
+Say "...".
+
+Let result be waiting for my_task.
+
+Say "The background task returned: {result}".

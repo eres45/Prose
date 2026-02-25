@@ -1,0 +1,80 @@
+{
+    "scopeName": "source.Prose",
+    "fileTypes": [
+        "Prose"
+    ],
+    "name": "Prose",
+    "patterns": [
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#string"
+        },
+        {
+            "include": "#number"
+        },
+        {
+            "include": "#keyword"
+        },
+        {
+            "include": "#operator"
+        },
+        {
+            "include": "#identifier"
+        }
+    ],
+    "repository": {
+        "comment": {
+            "name": "comment.line.Prose",
+            "match": "\\bNote:.*$"
+        },
+        "string": {
+            "name": "string.quoted.double.Prose",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.Prose",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "number": {
+            "name": "constant.numeric.Prose",
+            "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+        },
+        "keyword": {
+            "patterns": [
+                {
+                    "name": "keyword.control.Prose",
+                    "match": "\\b(If|Else|End|While|Repeat|For|each|from|to|step|in|do|the|following|Stop|Skip|next|loop|times)\\b"
+                },
+                {
+                    "name": "keyword.declaration.Prose",
+                    "match": "\\b(Let|be|Define|a|function|called|that|takes|parameters|and|does|gives|back|Class|has|properties|End|method|Inherits|from)\\b"
+                },
+                {
+                    "name": "keyword.statement.Prose",
+                    "match": "\\b(Say|Display|Ask|user|for|Call|with|on|Give|back|nothing|Add|to|Remove|Set|of|Get|text|Import|as|Throw|error|Attempt|Rescue|waiting|When|presses|Enter|closes|changes|Create|window|size|by|Run|all|where)\\b"
+                },
+                {
+                    "name": "keyword.operator.word.Prose",
+                    "match": "\\b(and|or|not|plus|minus|times|divided|by|is|greater|than|less|contains|starts|ends|with|as|number|text|boolean|length|of|keys|value|for|in|uppercase|lowercase|trimmed|reversed|substring|from|to|rounded|the|result|calling|then|New|no)\\b"
+                },
+                {
+                    "name": "support.class.Prose",
+                    "match": "\\b(true|false|nothing|null)\\b"
+                }
+            ]
+        },
+        "operator": {
+            "name": "keyword.operator.Prose",
+            "match": "[+\\-*/<>=!%]"
+        },
+        "identifier": {
+            "name": "variable.other.Prose",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+    }
+}

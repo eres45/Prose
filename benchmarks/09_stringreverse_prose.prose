@@ -1,0 +1,8 @@
+Note: String operations - uppercase, lowercase, length, split
+Let sentence be "the quick brown fox jumps over the lazy dog".
+Let upper be uppercase of sentence.
+Let lower be lowercase of sentence.
+Let words be split sentence by " ".
+Let word_count be the length of words.
+Say word_count.
+Say upper.

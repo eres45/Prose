@@ -1,0 +1,32 @@
+Note: FizzBuzz — now clean using modulo and compound conditions.
+
+Say FizzBuzz from 1 to 20.
+Let i be 1.
+While i <= 20 do the following.
+  If i % 15 = 0 then do the following.
+    Say FizzBuzz.
+  Otherwise do the following.
+    If i % 3 = 0 then do the following.
+      Say Fizz.
+    Otherwise do the following.
+      If i % 5 = 0 then do the following.
+        Say Buzz.
+      Otherwise do the following.
+        Display i.
+      End if.
+    End if.
+  End if.
+  Let i be i + 1.
+End while.
+
+Note: Countdown with Stop when we hit 3.
+Say counting down with stop at 3.
+Let n be 10.
+While n > 0 do the following.
+  If n = 3 then do the following.
+    Say stopping at 3.
+    Stop.
+  End if.
+  Display n.
+  Let n be n - 1.
+End while.

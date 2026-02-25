@@ -1,0 +1,11 @@
+Define a function called power that takes base and does the following.
+    Give back base times base.
+End function.
+
+Let result be the result of calling power with 2.
+Let result2 be result times result.
+Let result4 be result2 times result2.
+Let result8 be result4 times result4.
+Let result16 be result8 times result8.
+Let result20 be result16 times result4.
+Say result20.

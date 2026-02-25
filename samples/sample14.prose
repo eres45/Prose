@@ -1,0 +1,18 @@
+Note: HTTP POST and Dictionary Property Access Test
+
+Let url be "https://jsonplaceholder.typicode.com/posts".
+Let myPayload be a dictionary containing title: "Greeting", body: "Hello World", userId: 1.
+
+Say "--- Sending POST Request ---".
+Let response be the result of posting payload myPayload to url url.
+
+Say "--- POST Response Received ---".
+Say "New Post ID:".
+Say the id of response.
+
+Say "Post Title:".
+Say the title of response.
+
+Say "Writing response to file...".
+Write the JSON for response to file "post_response.json".
+Say "Done.".

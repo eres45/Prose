@@ -1,0 +1,43 @@
+Note: Sample 23 - Break and Continue in Loops
+
+Let i be 0.
+Say "Testing While Loop:".
+While i is less than 10 do the following.
+    Let i be i plus 1.
+    If i equals 3 then do the following.
+        Say "Skipping 3".
+        Skip to next.
+    End if.
+    
+    If i equals 6 then do the following.
+        Say "Stopping at 6".
+        Stop loop.
+    End if.
+    
+    Say "Number: {i}".
+End while.
+
+Say "".
+Say "Testing For-Each Loop:".
+Let items be a list containing "A", "B", "C", "D", "E".
+For each item in items do the following.
+    If item equals "B" then do the following.
+        Say "Skipping B".
+        Skip to next.
+    End if.
+    
+    If item equals "D" then do the following.
+        Say "Stopping at D".
+        Stop loop.
+    End if.
+    
+    Say "Letter: {item}".
+End for.
+
+Say "".
+Say "Testing Repeat Loop:".
+Repeat 5 times do the following.
+    Say "Repeating".
+    Stop loop.
+    Say "This should not print".
+End repeat.

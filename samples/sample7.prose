@@ -1,0 +1,74 @@
+Note: Sample 7 — Math standard library and error handling.
+
+Note: Basic math functions.
+Let x be 16.
+Let sq be square root of x.
+Say square root of 16 is, sq.
+
+Let y be 0 - 7.
+Let pos be absolute value of y.
+Say absolute value of negative 7 is, pos.
+
+Let z be 3.7.
+Let floored be floor of z.
+Let ceiled be ceiling of z.
+Let rounded be round z.
+Say floor of 3.7 is, floored.
+Say ceiling of 3.7 is, ceiled.
+Say round 3.7 is, rounded.
+
+Let pi be 3.14159.
+Let rounded2 be round pi to 2 places.
+Say pi rounded to 2 places is, rounded2.
+
+Note: Min and max.
+Let a be 15.
+Let b be 27.
+Let smaller be minimum of a and b.
+Let bigger be maximum of a and b.
+Say the smaller number is, smaller.
+Say the bigger number is, bigger.
+
+Note: Power.
+Let pw be power of 2 to 8.
+Say 2 to the power of 8 is, pw.
+
+Note: Random numbers.
+Say three random numbers between 1 and 100.
+Let r1 be random number between 1 and 100.
+Let r2 be random number between 1 and 100.
+Let r3 be random number between 1 and 100.
+Display r1.
+Display r2.
+Display r3.
+
+Note: Sort a list.
+Let nums be a list containing 42, 7, 99, 3, 55, 1, 88.
+Say before sorting, nums.
+Sort nums.
+Say after sorting, nums.
+
+Note: Error handling — try to divide by zero.
+Try the following.
+  Let bad be 10 / 0.
+  Say this should not print.
+Handle error and save it as msg.
+  Say caught an error, msg.
+End try.
+
+Note: Error handling — try to access a missing variable.
+Try the following.
+  Display nonExistentVariable.
+Handle error and save it as errMsg.
+  Say caught another error, errMsg.
+End try.
+
+Note: Error handling — bad type conversion.
+Try the following.
+  Let converted be as a number hello world.
+  Display converted.
+Handle error and save it as convErr.
+  Say cannot convert text to number, convErr.
+End try.
+
+Say all done.

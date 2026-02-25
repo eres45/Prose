@@ -1,0 +1,65 @@
+Note: Sample 6 — String manipulation and advanced text operations.
+
+Note: Basic string operations.
+Let sentence be "the quick brown fox jumps over the lazy dog".
+Let wordLen be the length of sentence.
+Say the sentence has, wordLen, characters.
+Let loud be uppercase of sentence.
+Say in uppercase, loud.
+Let quiet be lowercase of loud.
+Say in lowercase, quiet.
+
+Note: Trim whitespace.
+Let padded be    hello world    .
+Let clean be trim padded.
+Say cleaned text is, clean.
+
+Note: Replace text.
+Let msg be I love dogs very much.
+Let newMsg be replace dogs in msg with cats.
+Say after replace, newMsg.
+
+Note: Split a sentence into words.
+Let csv be apple banana cherry date elderberry.
+Let fruits be split csv by banana.
+Let fruitCount be the length of fruits.
+Say we have, fruitCount, fruits.
+For each fruit in fruits do the following.
+  Say fruit.
+End for.
+
+Note: Join a list back into a string.
+Let sep be and.
+Let joined be join fruits with sep.
+Say joined list, joined.
+
+Note: String contains check.
+Let myText be hello wonderful world.
+Let hasWord be myText contains wonderful.
+If hasWord equals true then do the following.
+  Say the text contains wonderful.
+Otherwise do the following.
+  Say wonderful was not found.
+End if.
+Let hasBye be myText contains goodbye.
+If hasBye equals false then do the following.
+  Say goodbye was not found.
+End if.
+
+Note: Index of in a string.
+Let pos be index of world in myText.
+Say world starts at position, pos.
+
+Note: Repeat a string.
+Let star be x.
+Let divider be repeat star 20 times.
+Say divider.
+
+Note: Type conversion.
+Let numText be 42.
+Let asNum be as a number numText.
+Let doubled be asNum * 2.
+Say doubled is, doubled.
+Let numVal be 3.14.
+Let asStr be as text numVal.
+Say numeric value, asStr.

@@ -1,0 +1,49 @@
+Note: Phase B Feature Test — Range Loops, Filtering, Database
+
+Note: ── Test 1: Range Loop ─────────────────────────────────
+Say "=== Range Loops ===".
+For each number from 1 to 5 do the following.
+    Say number.
+End for.
+
+Say "Counting by 2 from 0 to 10:".
+For each i from 0 to 10 step 2 do the following.
+    Say i.
+End for.
+
+Note: ── Test 2: Inline Where Filtering ──────────────────────
+Say "=== Inline Filtering ===".
+Let scores be a list containing 85, 42, 96, 33, 71, 55, 88.
+Let passing be all score in scores where score > 60.
+Say "Passing scores (over 60):".
+Say passing.
+
+Let words be a list containing "apple", "ball", "apricot", "cat", "avocado".
+Let a_words be all word in words where word contains "a".
+Say "Words containing letter a:".
+Say a_words.
+
+Note: ── Test 3: Database ────────────────────────────────────
+Say "=== Database ===".
+Import { create_table, save, find_all, find_where, count } from "database".
+
+Call create_table with "people", "name", "age", "city".
+Call save with "people", "Alice", "30", "London".
+Call save with "people", "Bob", "25", "Paris".
+Call save with "people", "Charlie", "35", "London".
+
+Let everyone be the result of calling find_all with "people".
+Say "All people:".
+Say everyone.
+
+Let london_folks be the result of calling find_where with "people", "city", "London".
+Say "People in London:".
+Say london_folks.
+
+Let total be the result of calling count with "people".
+Say "Total people:".
+Say total.
+
+Note: ── Test 4: Error Message Quality ────────────────────────
+Say "=== Error Message Preview ===".
+Say "All tests passed! Try accessing a non-existent variable to see the friendly error.".

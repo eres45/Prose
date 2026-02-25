@@ -1,0 +1,22 @@
+Note: Sample 25 - Chained Method Calls
+
+Define a class called TextBuilder with properties buffer.
+
+Define a method called append for TextBuilder that takes text and does the following.
+    Let current be the buffer of self.
+    Set the buffer of self to current plus text.
+    Give back self.
+End method.
+
+Define a method called build for TextBuilder that takes no parameters and does the following.
+    Give back the buffer of self.
+End method.
+
+Let builder be a new TextBuilder.
+Set the buffer of builder to "".
+
+Call append on builder with "Hello, " then call append with "chained " then call append with "methods!".
+Say "Chained output 1: {the buffer of builder}".
+
+Let result be the result of calling append on builder with " And some more text" then call build with no parameters.
+Say "Chained output 2: {result}".

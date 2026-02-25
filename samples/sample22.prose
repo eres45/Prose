@@ -1,0 +1,18 @@
+Note: Sample 22 - Closures and First-Class Functions
+
+--- First-Class Functions ---
+Define a function called greet that takes name and does the following.
+    Say "Hello, {name}!".
+End function.
+
+Let greeter be greet.
+Call greeter with "Alice".
+
+--- Closures ---
+Define a function called makeAdder that takes n and does the following.
+    Give back a function that takes x and gives back x plus n.
+End function.
+
+Let addFive be the result of calling makeAdder with 5.
+Let result be the result of calling addFive with 10.
+Say "10 plus 5 is {result}.".

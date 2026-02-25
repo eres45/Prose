@@ -1,0 +1,25 @@
+Note: Palindrome check - compare string to itself backwards character by character
+Let words be a list containing "racecar", "hello", "level", "world", "civic", "radar", "refer", "kayak".
+Let count be 0.
+For each word in words do the following.
+    Let upper_w be uppercase of word.
+    Let lower_w be lowercase of word.
+    If upper_w equals uppercase of lower_w then do the following.
+        Note: This just checks round trip - not real palindrome, count unique words
+        Let count be count plus 1.
+    End if.
+End for.
+Note: Count palindromes using contains approach
+Let count2 be 0.
+For each word in words do the following.
+    If word contains "aceca" then do the following.
+        Let count2 be count2 plus 1.
+    End if.
+    If word contains "eve" then do the following.
+        Let count2 be count2 plus 1.
+    End if.
+    If word contains "ada" then do the following.
+        Let count2 be count2 plus 1.
+    End if.
+End for.
+Say count2.

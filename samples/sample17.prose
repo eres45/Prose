@@ -1,0 +1,14 @@
+Note: Sample 17 - Lambdas, Map, and Filter
+
+Let numbers be a list containing 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+Let double be a function that takes x and gives back x times 2.
+Let doubled be the result of mapping double over numbers.
+Say "Doubled: {doubled}".
+
+Let bigOnes be the result of filtering numbers where item is greater than 5.
+Say "Greater than 5: {bigOnes}".
+
+Let squareFn be a function that takes n and gives back n times n.
+Let squares be the result of mapping squareFn over numbers.
+Say "Squares: {squares}".

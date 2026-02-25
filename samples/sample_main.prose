@@ -1,0 +1,18 @@
+Ask the user for name.
+Ask the user for age.
+Let age be age plus 0.
+If age is greater than 17 then do the following.
+  Say welcome, name, you are an adult.
+Otherwise do the following.
+  Say sorry, name, you are too young.
+End if.
+
+Define a function called countdown that takes number and does the following.
+  While number is greater than 0 do the following.
+    Display number.
+    Let number be number minus 1.
+  End while.
+  Say done.
+End function.
+
+Call countdown with 5.

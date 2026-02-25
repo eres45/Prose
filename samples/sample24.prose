@@ -1,0 +1,33 @@
+Note: Sample 24 - String Slicing and Multi-line Expressions
+
+--- Multi-line Expressions ---
+Let bigMath be 10 plus ...
+               20 plus ...
+               30 plus ...
+               40.
+
+Say "The big math result is {bigMath}".
+
+Let message be "Hello " plus ...
+               "world, " plus ...
+               "this is a " plus ...
+               "multi-line string!".
+
+Say message.
+
+
+--- String Slicing and Indexing ---
+Let text be "Beautiful plain language".
+
+Let first be character 1 of text.
+Let tenth be character 11 of text.
+Say "First char: {first}".
+Say "Eleventh char: {tenth}".
+
+Let sub1 be substring of text from 1 to 9.
+Let sub2 be substring of text from 11 to 15.
+Let sub3 be substring of text from 17 to 24.
+
+Say "Substring 1-9: {sub1}".
+Say "Substring 11-15: {sub2}".
+Say "Substring 17-24: {sub3}".
